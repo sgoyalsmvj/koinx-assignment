@@ -7,6 +7,7 @@ import axios from "axios";
 const Hero = () => {
   const [price, setPrice] = useState();
   const [inrPrice, setInrPrice] = useState();
+
   useEffect(() => {
     axios
       .get(
@@ -20,17 +21,31 @@ const Hero = () => {
         setInrPrice(res.data.bitcoin.inr);
         console.log(res.data);
       });
-  }, [price, inrPrice]);
+  }, []);
+
+  // Function to format price with commas
+  const formatPriceWithCommas = (price) => {
+    return price.toLocaleString("en-US");
+  };
+
   return (
-    <div className="m-2  sm:m-10 w-[97%]  shadow-md rounded-lg p-4 border-2 bg-white">
-      <div className="flex  items-center justify-start mb-4">
+    <div className="m-2 sm:m-10 w-[97%] shadow-md rounded-lg p-4 border-2 bg-white">
+      <div className="flex items-center justify-start mb-4">
         <img className="ml-2" src={Bitcoin} alt="bitcoin" />
         <h2 className="text-3xl font-bold m-2"> Bitcoin </h2>
         <h3 className="text-gray-500">BTC</h3>
       </div>
       <div className="border-b-2 pb-4 mx-1 mb-3">
-        <h1 className="font-semibold text-4xl mb-2">$ {price}</h1>
-        <h3 className="font-medium ">₹ {inrPrice}</h3>
+        <div className="flex items-center justify-start ">
+          <h1 className="font-semibold text-4xl mb-2">
+            $ {formatPriceWithCommas(price)}
+          </h1>
+          <div className="bg-green-100 px-2 mx-3 py-1 rounded ">
+            <div>🔼 8.21%</div>
+          </div>
+        </div>
+
+        <h3 className="font-medium">₹ {formatPriceWithCommas(inrPrice)}</h3>
       </div>
       <div className="p-2 mb-1">
         <h2 className="font-semibold">Bitcoin Price Chart(USD)</h2>
