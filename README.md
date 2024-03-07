@@ -1,4 +1,4 @@
-# KoinX Frontend Intern Assignment
+# KoinX Assignment
 
 This repository contains the solution for the KoinX Frontend Intern Assignment. The objective of this assignment was to convert a Figma design into code using React.js or Next.js, integrating Coingecko APIs to fetch the price of Bitcoin in USD and INR, and displaying the data in a responsive UI. Additionally, it involved implementing TradingView charts for Bitcoin price visualization and fetching trending coins data from Coingecko's API.
 
