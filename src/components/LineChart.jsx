@@ -10,9 +10,9 @@ function LineChart({ symbol }) {
     script.type = "text/javascript";
     script.async = true;
     script.innerHTML = JSON.stringify({
-      //   autosize: true,
-      width: "837",
-      height: "574",
+      autosize: true,
+      // width: "837",
+      // height: "574",
       symbol: symbol || "CRYPTO:BTCUSD", // Default symbol is "CRYPTO:BTCUSD"
       interval: "D",
       timezone: "Etc/UTC",
@@ -32,15 +32,15 @@ function LineChart({ symbol }) {
   }, [symbol]);
 
   return (
-    <div className=" w-[60%]">
+    <div className="h-[400px]">
       <div
         className="tradingview-widget-container"
         ref={container}
-        style={{ height: "100%", width: "50%" }}
+        style={{ height: "100%", width: "10%" }}
       >
         <div
           className="tradingview-widget-container__widget"
-          style={{ height: "100%", width: "50%" }}
+          style={{ height: "100%", width: "100%" }}
         ></div>
       </div>
     </div>

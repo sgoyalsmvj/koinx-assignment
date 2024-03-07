@@ -4,7 +4,7 @@ import rect1 from "../assets/rect1.png";
 import rect2 from "../assets/rect2.png";
 const About = () => {
   return (
-    <div className=" m-10 w-[60%]shadow-md rounded-lg p-4 border-2 bg-white">
+    <div className="m-2 mb-4 sm:m-10 shadow-md rounded-lg p-4 border-2 bg-white">
       <h2 className="font-bold text-xl mb-3">About Bitcoin</h2>
       <div className="border-b-2 border-gray-200">
         <h2 className="mb-3 font-bold">What is bitcoin?</h2>
@@ -45,7 +45,7 @@ const About = () => {
       </div>
       <div className="border-b-2 border-gray-200  ">
         <h2 className="my-3 font-bold">Already holding Bitcoin?</h2>
-        <div className="flex items-center justify-start my-2">
+        <div className="flex flex-col sm:flex-row  items-center justify-start my-2">
           <Card
             title="Calculate your profits"
             image={rect1}

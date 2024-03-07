@@ -12,13 +12,13 @@ import Advertisement from "./Advertisement";
 
 const Layout = () => {
   return (
-    <div className="bg-gray-100 overflow-hidden">
+    <div className="bg-gray-100 sm:p-4">
       <Navbar />
-      <span className="relative top-4 left-5">
-        Cryptocurrencies{" >> "} Bitcoin
-      </span>
-      <div className="flex justify-between items-start ">
-        <div>
+      <div className="px-2 py-4">
+        <span className="text-gray-500">Cryptocurrencies &gt;&gt; Bitcoin</span>
+      </div>
+      <div className="flex flex-col sm:flex-row w-full justify-center items-start">
+        <div className="w-full ">
           <Hero />
           <Menubar />
           <Performance />
@@ -27,7 +27,7 @@ const Layout = () => {
           <Tokenomics />
           <Team />
         </div>
-        <div className="m-2">
+        <div className=" flex items-center justify-center">
           <Advertisement />
         </div>
       </div>

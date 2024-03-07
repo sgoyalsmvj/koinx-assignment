@@ -6,7 +6,7 @@ import mask3 from "../assets/mask3.png";
 
 const Team = () => {
   return (
-    <div className="m-10 w-[60%]shadow-md rounded-lg p-4 border-2 bg-white">
+    <div className="m-2 sm:m-10 shadow-md rounded-lg p-4 border-2 bg-white">
       <h1 className="font-bold text-xl mb-3">Team</h1>
       <div className="mb-3">
         <p>
@@ -16,7 +16,7 @@ const Team = () => {
           placeat quo molestias?
         </p>
       </div>
-      <div className="flex-col p-2 ">
+      <div className="flex flex-col  p-2 ">
         <TeamCard
           image={mask1}
           name="John Smith"

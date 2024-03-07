@@ -3,12 +3,12 @@ import RingChart from "./RingChart";
 import ring from "../assets/ring.png";
 const Tokenomics = () => {
   return (
-    <div className="m-10 w-[60%]shadow-md rounded-lg p-4 border-2 bg-white">
+    <div className="m-2 mb-4 sm:m-10 shadow-md rounded-lg p-4 border-2 bg-white">
       <h1 className="font-bold text-xl mb-3">Tokenomics</h1>
       <div>
         <h2 className="mb-3 font-bold">Initial Distribution</h2>
-        <div className="flex flex-col">
-          <div className="flex items-center ">
+        <div className="flex  flex-col ">
+          <div className="flex flex-col sm:flex-row items-center ">
             <img className="h-40 w-40 my-3" src={ring} alt="ring" />
             <div className="m-5">
               <ul>

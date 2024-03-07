@@ -3,12 +3,12 @@ import logo from "../assets/koinx.png";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center bg-white shadow-md ">
+    <div className="flex  justify-between items-center bg-white shadow-md ">
       <div className="m-4 ml-10">
         <img className="h-6" src={logo} alt="logo" />
       </div>
-      <div className="flex justify-center items-center">
-        <ul className="flex justify-center items-center font-semibold">
+      <div className=" hidden sm:flex  justify-center items-center">
+        <ul className="flex  justify-center items-center font-semibold">
           <li className="m-2">Crypto Taxes</li>
           <li className="m-2">Free Tools</li>
           <li className="m-2">Resource Center</li>
