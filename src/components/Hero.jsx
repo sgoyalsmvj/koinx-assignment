@@ -25,7 +25,7 @@ const Hero = () => {
 
   // Function to format price with commas
   const formatPriceWithCommas = (price) => {
-    return price.toLocaleString("en-US");
+    return price?.toLocaleString("en-US");
   };
 
   return (
